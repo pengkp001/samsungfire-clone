@@ -1,4 +1,4 @@
-const swCard = new Swiper(".sw-card", {
+var swCard = new Swiper(".sw-card", {
   slidesPerView: 3,
   spaceBetween: 30,
   pagination: {
