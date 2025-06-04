@@ -2,10 +2,10 @@
 
 @font-face {
   font-family: "SS-regular";
-  src: url(../font/SS-regular.woff2) format("woff2");
+  src: url("../font/SS-regular.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "SS-bold";
-  src: url(../font/SS-bold.woff2);
+  src: url("../font/SS-bold.woff2") format("woff2");
 }
