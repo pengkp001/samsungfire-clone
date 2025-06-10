@@ -85,3 +85,43 @@
   background-size: contain;
   cursor: pointer;
 }
+
+@media screen and (max-width: 1219px) {
+  .sw-banner-section {
+    margin-top: 2rem;
+    border-radius: 2rem;
+    height: 200px;
+  }
+
+  /* 자주찾는 메뉴 모바일 */
+  .shortcut-wrap-mb {
+    position: relative;
+    display: block;
+    margin-top: 2rem;
+  }
+
+  .shortcut-wrap-mb ul {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+  .shortcut-wrap-mb ul li {
+    position: relative;
+  }
+  .shortcut-wrap-mb ul li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+  }
+  .shortcut-wrap-mb ul li a img {
+    width: 52px;
+    height: 52px;
+    object-fit: contain;
+  }
+  .shortcut-wrap-mb ul li a span {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    text-align: center;
+  }
+}
