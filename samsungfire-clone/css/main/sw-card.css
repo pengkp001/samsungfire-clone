@@ -34,25 +34,49 @@
 .sw-card .swiper-pagination {
  position: relative;
 }
+.sw-card .swiper-pagination-bullet {
+ width: 6px;
+ height: 6px;
+ /* border-radius: 3px; */
+}
+.sw-card .swiper-pagination-bullet-active {
+ margin: 0 !important;
+ width: 16px;
+ border-radius: 3px;
+}
+.sw-card .swiper-button-disabled {
+ opacity: 0;
+}
 
 @media screen and (max-width: 1219px) {
  .sw-card .swiper-slide {
   width: 200px !important;
-  margin: 0 30px !important;
+  /* margin: 0 30px !important; */
  }
  .sw-card .swiper-slide:first-child {
-  margin-left: 0 !important;
+  /* margin-left: 0 !important; */
  }
  .sw-card .swiper-slide:last-child {
-  margin-right: 0 !important;
+  /* margin-right: 0 !important; */
  }
  .sw-card .swiper-wrapper {
   justify-content: space-between;
  }
  .sw-card .swiper-button-next {
-  display: none;
+  opacity: 0;
  }
  .sw-card .swiper-button-prev {
-  display: none;
+  opacity: 0;
+ }
+}
+@media screen and (max-width: 767px) {
+ .sw-card .swiper-slide {
+  opacity: 0.5;
+  transform: scale(0.8);
+  transition: all 0.2s ease-in-out;
+ }
+ .sw-card .swiper-slide-active {
+  opacity: 1;
+  transform: scale(1);
  }
 }

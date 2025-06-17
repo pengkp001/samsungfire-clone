@@ -1,7 +1,7 @@
 const swCard = new Swiper(".sw-card", {
  // 기본값
  centeredSlides: false,
- slidesPerView: 3,
+ slidesPerView: "auto",
  spaceBetween: 30,
  pagination: {
   el: ".swiper-pagination",
@@ -13,8 +13,20 @@ const swCard = new Swiper(".sw-card", {
  },
  //  반응형
  breakpoints: {
-  320: {},
-  768: {},
-  1220: {},
+  // window.width >= 0
+  0: {
+   centeredSlides: true,
+   spaceBetween: 20,
+  },
+  // window.width >= 768
+  768: {
+   centeredSlides: false,
+   spaceBetween: 30,
+  },
+  // window.width >= 1220
+  1220: {
+   centeredSlides: false,
+   spaceBetween: 30,
+  },
  },
 });
